@@ -1,14 +1,14 @@
 # script seputar termux crack facebook 
 
-#BY KIWZ-XD
+#BY OPIK ALEXANDER
 Sc project!
 
 
-$git clone https://github.com/ikiwz-XD/Fbh
+$git clone https://github.com/Taufiqurrohman22/CrkFb
 
 $ls
 
-$cd Fbh
+$cd CrkFb
 
 $ls
 
