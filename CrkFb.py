@@ -141,14 +141,14 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	print(f'''\t{asu} ______                                              
+	print(f'''\t{asu}                                              
 \t─▄───▄▄▄───▄─
 \t▀▀─▄█████▄─▀▀
 \t───█─▀█▀─█───
 \t──▄─▀█▀█▀─▄──
 \t▀█───█▀█───█▀
     	
-			{m}•{k}•{h}•{sir}•{b} Author : OPIK ALEXANDER {x}{m}•{k}•{h}•{x}''')
+			{m}✵{k}✵{h}✵{sir}✵{b} Author : OPIK ALEXANDER {x}{m}✵{k}✵{h}✵{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -175,12 +175,12 @@ def login_lagi334():
 		banner()
 		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough/BoostFacebook[white] ©©©'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		cookie=input(f'  [{h}✵{x}] Masukkan Cookies :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
 		cok=open(".cok.txt", "w").write(cookie)
-		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
+		print(f'  {x}[{h}✵{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
 		exit()
 	except Exception as e:
 		os.system("rm -f .token.txt")
@@ -1126,7 +1126,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	alvino_xy(f'\n\t{x}[=]——> {h}WELCOME TO SCRIPT OPIK ALEXANDER !!\n\t{x}[=]——> {h}Kenalin gw Opik kls : XI Mipa-5 A\n\t{x}[=]——> {h}Opik Sehat Selalu Yah😇\n\t{x}[=]——> {h}Aminnn ....!!\n\t{x}[=]——> {h}SARAN PAKEK KARTU BUKAN WIFI ! !{x}')
+	alvino_xy(f'\n\t{x}[=]——> {h}WELCOME TO SCRIPT OPIK ALEXANDER !!\n\t{x}[=]——> {h}Kenalin gw opik kls : XI Mipa-5\n\t{x}[=]——> {h}Opik Sehat Selalu Yah 😇\n\t{x}[=]——> {h}Aminnn ....!!\n\t{x}[=]——> {h}SARAN PAKEK KARTU BUKAN WIFI ! !{x}')
 	time.sleep(2)
 	login()
 
