@@ -1,6 +1,6 @@
 # script seputar termux crack facebook 
 
-#BY OPIK ALEXANDER
+# BY OPIK ALEXANDER
 Sc project!
 
 
